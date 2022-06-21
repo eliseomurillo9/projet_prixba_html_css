@@ -5,24 +5,31 @@
     margin-bottom: 2rem;
     color: #EA5455;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "montserrat", sans-serif; 
     margin-left: 6rem;
 }
 
+section{
+    border: 2px pink solid;
+    margin-bottom: 6rem;
+}
+
 /* === HOMEPAGE === */
+
 .homepage{
     margin: 3rem auto;
     max-width: 1000px;
     justify-content: center;
 }
 
+/* === BEST SALES === */
 .best-sales__container{
     display: flex;
     align-items: center;
     
 
-    .icon{
+    .fa-solid{
         margin: 2rem;
         font-size: 2rem;
         color:#EA5455;
@@ -64,5 +71,48 @@
                 color: #4DCF62;
             }
         }
+    }
+}
+
+/* === CATEGORIES === */
+.categories{
+    h2 span{
+        color: black;
+        font-size: .8rem;
+        font-weight: 100;
+        margin-left: .5rem;
+    }
+}
+
+.categories__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    article{
+        height: 80px;
+        width: 80px;
+
+        background-color: #2D4059;
+        border-radius: 30px;
+        color: #E5E5E5;
+
+        margin: .5rem 1rem;
+        padding: 1rem;
+
+        text-align: center;
+
+        .fa-solid{
+            font-size: 2rem;
+            margin-top: .2rem;
+            margin-bottom: .7rem;
+        }
+
+        p{
+            font-weight: bold;
+            font-size: .8rem;
+            font-family: "montserrat", sans-serif;
+        }
+
     }
 }

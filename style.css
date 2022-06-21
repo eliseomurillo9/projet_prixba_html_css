@@ -58,9 +58,14 @@ table {
   margin-bottom: 2rem;
   color: #EA5455;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "montserrat", sans-serif;
   margin-left: 6rem;
+}
+
+section {
+  border: 2px pink solid;
+  margin-bottom: 6rem;
 }
 
 /* === HOMEPAGE === */
@@ -70,11 +75,12 @@ table {
   justify-content: center;
 }
 
+/* === BEST SALES === */
 .best-sales__container {
   display: flex;
   align-items: center;
 }
-.best-sales__container .icon {
+.best-sales__container .fa-solid {
   margin: 2rem;
   font-size: 2rem;
   color: #EA5455;
@@ -110,6 +116,40 @@ table {
 }
 .product-article .product-article__details .product-article__details__bottom p {
   color: #4DCF62;
+}
+
+/* === CATEGORIES === */
+.categories h2 span {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-left: 0.5rem;
+}
+
+.categories__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.categories__container article {
+  height: 80px;
+  width: 80px;
+  background-color: #2D4059;
+  border-radius: 30px;
+  color: #E5E5E5;
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.categories__container article .fa-solid {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.7rem;
+}
+.categories__container article p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-family: "montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
