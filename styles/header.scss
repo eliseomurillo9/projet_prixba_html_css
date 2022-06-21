@@ -1,0 +1,130 @@
+/*header*/
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+/*HEADER UPBAR*/
+.header-upbar {
+    background-color: #E5E5E5;
+    margin:auto;
+   
+    display : flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logo_container{
+display :flex;
+
+
+}
+
+.logo{
+    width : 50px;
+    height: 60px;
+    align-self: center;
+    padding : 20px 10px 20px 20px;
+}
+
+.logo_container span{
+ align-self : center;
+ color: #2D4059 ;
+}
+
+.right-zone{
+
+    padding: 15px 20px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    
+}
+
+
+
+.right-zone > p {
+    font-weight: bold;
+    text-align: right;
+    
+}
+.steps{
+    display : flex;
+    padding-top: 20px;
+    font-size: 0.7rem;
+    
+  
+}
+
+.icons1{
+
+    padding: 2px 7px 3px 8px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #EA5455;
+    color : #FFFFFF;
+    margin-left: 20px;
+}
+.icons2{
+
+    padding: 2px 6px 3px 6px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #EA5455;
+    color : #FFFFFF;
+    margin-left: 20px;
+}
+.icons3{
+
+    padding: 2px 7px 3px 7px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #EA5455;
+    color : #FFFFFF;
+    margin-left: 20px;
+}
+
+/*HEADER BOTTOMBAR*/
+.header-bottombar{
+    background-color: #2D4059;
+    margin:auto;
+    font-size: 1rem;
+}
+
+.bottombar-container{
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    margin : auto;
+    max-width : 1000px;
+    padding: 10px 260px 15px 260px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#categories{
+
+background-color: #E5E5E5;
+border-radius: 7px;
+height: 30px;
+font-weight: 400;
+/*font-size: 15px;*/
+line-height: 18px;
+text-align: center;
+padding-right: 10px;
+
+}
+.search{
+    border: 2px solid red;
+    display:flex;
+}
+
+.header-navbar nav{
+    display:flex;
+    border: 2px solid red;
+}
+
+
+.header-navbar a{
+    text-decoration: none;
+    color : white;
+    padding : 0 20px;
+}
