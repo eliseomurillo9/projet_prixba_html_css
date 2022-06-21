@@ -21,6 +21,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -50,6 +52,84 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.information {
+  background-color: #2D4059;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-family: "Montserrat", sans-serif;
+}
+.information .info_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+}
+.information .info_container i {
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 11px 9px;
+  font-size: 1.1rem;
+  color: #EA5455;
+  margin: auto;
+  align-self: center;
+}
+.information .info_container i:nth-child(1) {
+  padding: 11px 13px;
+}
+.information .info_container section {
+  max-width: 220px;
+}
+.information .info_container section h3 {
+  color: #f4F4F4;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.information .info_container section p {
+  color: #F4F4F4;
+  font-size: 0.9rem;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4F4F4;
+  font-family: "Montserrat", sans-serif;
+}
+.nav_container nav {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #2D4059;
+}
+.nav_container nav a:nth-child(2) {
+  margin: 30px 0;
+}
+.nav_container nav:nth-child(2) {
+  text-align: end;
+}
+
+footer {
+  background-color: #2D4059;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+footer a {
+  color: #f4F4F4;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+footer span {
+  color: #f4F4F4;
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
