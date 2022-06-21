@@ -54,6 +54,51 @@ table {
   border-spacing: 0;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+body .container-products {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 1000px;
+  text-align: center;
+}
+body .container-products aside {
+  margin: 0 50px 0 6px;
+}
+body .container-products aside h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+body .container-products aside p {
+  color: #616060;
+  font-weight: 400;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+}
+body .container-products aside p i {
+  font-size: 0.6rem;
+  margin-right: 10px;
+}
+body .container-products .results {
+  width: 100%;
+}
+body .container-products .show_bar {
+  display: flex;
+  justify-content: space-between;
+}
+body .container-products .show_bar .show_results_button {
+  display: flex;
+  background-color: #EA5455;
+}
+
 .information {
   background-color: #2D4059;
   display: flex;
