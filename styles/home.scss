@@ -7,11 +7,10 @@
     font-weight: bold;
     font-size: 1.2rem;
     font-family: "montserrat", sans-serif; 
-    margin-left: 6rem;
 }
 
 section{
-    border: 2px pink solid;
+    // border: 2px pink solid;
     margin-bottom: 6rem;
 }
 
@@ -20,21 +19,30 @@ section{
 .homepage{
     margin: 3rem auto;
     max-width: 1000px;
-    justify-content: center;
 }
 
 /* === BEST SALES === */
-.best-sales__container{
+.best-sales{
     display: flex;
-    align-items: center;
-    
 
     .fa-solid{
-        margin: 2rem;
+        margin: 2rem 0;
         font-size: 2rem;
         color:#EA5455;
         cursor: pointer;
+        align-items: center;
+        justify-content: center;
     }
+}
+
+.title-best-sales{
+    margin-left: 2rem;
+}
+
+.best-sales__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .product-article{
@@ -44,15 +52,15 @@ section{
     box-shadow: -1px 2px 15px 1px rgba(0,0,0,0.26);
 
     .image{
-        width: 130px;
-        height: 100px;
+        width: 180px;
+        height: 150px;
         background-color: rgb(80, 80, 80);
     }
 
     .product-article__details{
         margin-top: .5rem;
 
-        h3{
+        h2{
             font-family: 'montserrat', sans-serif;
             font-weight: bold;
             font-size: .8rem;
@@ -75,6 +83,10 @@ section{
 }
 
 /* === CATEGORIES === */
+.title-categories{
+    margin-left: 1rem;
+}
+
 .categories{
     h2 span{
         color: black;
@@ -86,10 +98,10 @@ section{
 
 .categories__container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 
-    article{
+    div{
         height: 80px;
         width: 80px;
 
@@ -111,6 +123,38 @@ section{
         p{
             font-weight: bold;
             font-size: .8rem;
+            font-family: "montserrat", sans-serif;
+        }
+
+    }
+}
+
+/* === CHOICES === */
+.title-choices{
+    margin-left: 1.3rem;
+}
+
+.choices__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div{
+
+        img{
+            width: 300px;
+            height: 200px;
+
+            object-fit: cover;
+
+            margin: 1rem;
+        }
+
+        p{
+            text-align: center;
+            color: #EA5455;
+            font-weight: bold;
+            font-size: 1rem;
             font-family: "montserrat", sans-serif;
         }
 
