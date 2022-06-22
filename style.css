@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,139 +52,82 @@ table {
   border-spacing: 0;
 }
 
-/* === REUSABLE STYLES === */
-.title {
-  margin-bottom: 2rem;
-  color: #EA5455;
-  font-weight: bold;
-  font-size: 1.2rem;
-  font-family: "montserrat", sans-serif;
+/* ===== PRODUCT ===== */
+.product {
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: 900px;
 }
 
-section {
-  margin-bottom: 6rem;
-}
-
-/* === HOMEPAGE === */
-.homepage {
-  margin: 3rem auto;
-  max-width: 1000px;
-}
-
-/* === BEST SALES === */
-.best-sales {
+.product__container {
   display: flex;
 }
-.best-sales .fa-solid {
-  margin: 2rem 0;
-  font-size: 2rem;
-  color: #EA5455;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
+.product__container .main-image {
+  background-color: #E5E5E5;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
-
-.title-best-sales {
-  margin-left: 2rem;
-}
-
-.best-sales__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.product-article {
-  padding: 1rem 1rem 0.5rem 1rem;
-  margin: 0 1rem;
-  border-radius: 0.2rem;
-  box-shadow: -1px 2px 15px 1px rgba(0, 0, 0, 0.26);
-}
-.product-article .image {
-  width: 180px;
-  height: 150px;
-  background-color: rgb(80, 80, 80);
-}
-.product-article .product-article__details {
-  margin-top: 0.5rem;
-}
-.product-article .product-article__details h2 {
-  font-family: "montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-.product-article .product-article__details .product-article__details__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.product-article .product-article__details .product-article__details__bottom span {
-  font-size: 0.7rem;
-}
-.product-article .product-article__details .product-article__details__bottom p {
-  color: #4DCF62;
-}
-
-/* === CATEGORIES === */
-.title-categories {
-  margin-left: 1rem;
-}
-
-.categories h2 span {
-  color: black;
-  font-size: 0.8rem;
-  font-weight: 100;
-  margin-left: 0.5rem;
-}
-
-.categories__container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.categories__container div {
-  height: 80px;
-  width: 80px;
-  background-color: #2D4059;
-  border-radius: 30px;
-  color: #E5E5E5;
-  margin: 0.5rem 1rem;
-  padding: 1rem;
-  text-align: center;
-}
-.categories__container div .fa-solid {
-  font-size: 2rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.7rem;
-}
-.categories__container div p {
-  font-weight: bold;
-  font-size: 0.8rem;
-  font-family: "montserrat", sans-serif;
-}
-
-/* === CHOICES === */
-.title-choices {
-  margin-left: 1.3rem;
-}
-
-.choices__container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.choices__container div img {
+.product__container .main-image img {
   width: 300px;
-  height: 200px;
+  height: 300px;
+  padding: 1rem;
   object-fit: cover;
-  margin: 1rem;
 }
-.choices__container div p {
-  text-align: center;
-  color: #EA5455;
-  font-weight: bold;
-  font-size: 1rem;
+
+.product__details h2, .product__details p, .product__details span {
   font-family: "montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+.product__details h2, .product__details span {
+  font-weight: bold;
+}
+.product__details p {
+  max-width: 380px;
+  margin-top: 1rem;
+}
+.product__details .add-basket__container {
+  display: flex;
+  align-items: center;
+}
+.product__details .add-basket__container .number-product {
+  display: flex;
+  margin-right: 1rem;
+}
+.product__details .add-basket__container .number-product p {
+  background-color: #E5E5E5;
+  padding: 0.5rem;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.product__details .add-basket__container .number-product p:nth-child(1) {
+  border-right: solid 1px black;
+}
+.product__details .add-basket__container .number-product p:nth-child(2) {
+  color: #EA5455;
+}
+.product__details .add-basket__container .number-product p:nth-child(3) {
+  border-left: solid 1px black;
+}
+.product__details .add-basket__container button {
+  background-color: #EA5455;
+  color: #E5E5E5;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+.product__details .add-basket__container .favorite {
+  background-color: #E5E5E5;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.product .miniatures__container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
