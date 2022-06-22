@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/41d6b020fe.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
         rel="stylesheet">
@@ -16,7 +16,242 @@
 </head>
 
 <body>
-    <!-- Information  -->
+    <header>
+        <!--header barre du haut-->
+        <div class="header-upbar upbar-container">
+            <div class="logo_container">
+                <img class="logo" src="images/logos/logo_color.svg" alt="logo Prixba couleur ">
+                <span>PrixBa</span>
+            </div>
+
+            <div class="right-zone">
+                <p>Tous vos besoins à petits prix dans la métropole lilloise</p>
+                <div class="steps">
+                    <div class="step">
+                        <p>
+                            <span class="icons1">1</span> Choix et commande des articles 
+                        </p>
+                    </div>
+                    <div class="step"> 
+                        <p> 
+                            <span class="icons2">2</span> Retrait des articles
+                        </p>
+                    </div>
+                    <div class = "step"> 
+                        <p> 
+                            <span class="icons3">3</span> Paiement des articles
+                        </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--header barre du bas-->
+
+        <div class="header-bottombar ">
+            <div class="bottombar-container">
+                <div class="search">
+                    <form method="post" action="traitement.php">
+                
+                            
+                            <select name="categories" id="categories">
+                                <option value="Categories">Catégories</option>
+
+                            </select>
+                        
+                        </form>                 
+                                                
+                            <input type="search" name="searchbar" id="searchbar" placeholder="" size="30" maxlength="30" />
+                            <input type="submit" value="Rechercher" id="rechercher" />
+                        
+                    
+                </div>
+                <div class="header-navbar">
+                    <nav>
+                        <a href="catalogue.html">Catalogue</a>
+                        <a href="Questions.html">Questions fréquentes</a>
+                        <a class="connexion" href="Connexion.html">Connexion</a> <i class="fa-solid fa-angle-down"></i> 
+            
+                    </nav>
+                </div>
+                <div class="shopping">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <span class="icons4">2</span>
+                </div>
+            </div>
+        </div>
+            
+    </header>
+    
+    <!-- ===== HOMEPAGE START ===== -->
+    <main class="homepage">
+
+        <!-- BEST SALES START -->
+        <h2 class="title title-best-sales">Meilleures ventes</h2>
+        <section class="best-sales">
+
+            <div class="best-sales__container">
+                <i class="fa-solid fa-caret-left"></i>
+
+                <article class="product-article">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="hammer">
+                    <div class="product-article__details">
+                        <h2>Marteau</h2>
+                        <div class="product-article__details__bottom">
+                            <span>1€</span>
+                            <p>En stock</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-article">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="hammer">
+                    <div class="product-article__details">
+                        <h2>Marteau</h2>
+                        <div class="product-article__details__bottom">
+                            <span>1€</span>
+                            <p>En stock</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-article">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="hammer">
+                    <div class="product-article__details">
+                        <h2>Marteau</h2>
+                        <div class="product-article__details__bottom">
+                            <span>1€</span>
+                            <p>En stock</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-article">
+                    <img class="image"
+                        src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="hammer">
+                    <div class="product-article__details">
+                        <h2>Marteau</h2>
+                        <div class="product-article__details__bottom">
+                            <span>1€</span>
+                            <p>En stock</p>
+                        </div>
+                    </div>
+                </article>
+                <i class="fa-solid fa-caret-right"></i>
+            </div>
+
+        </section>
+
+        <!-- BEST SALES END -->
+
+        <!-- CATEGORIES START -->
+        <section class="categories">
+            <h2 class="title title-choices">Découvrez nos offres par catégories <span> Voir tout</span></h2>
+
+            <div class="categories__container">
+
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <p>Bricolage</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <p>Cuisine</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Multimédia</p>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- CATEGORIES END -->
+
+        <!-- CHOICES START -->
+        <section class="choices">
+
+            <h2 class="title title-choices">Avoir le choix chez Prix Marché</h2>
+
+            <div class="choices__container">
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1547843337-c59a53c2c0cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                        alt="hand">
+                    <p>Je choisis</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1600009723480-ae9ee0a74709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                        alt="hand">
+                    <p>Je choisis</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1576341592370-3151269da47e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                        alt="hand">
+                    <p>Je choisis</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- CHOICES END -->
+
+    </main>
+   <!-- Information  -->
     <div class="information">
         <div class="info_container">
             <i class="fa-solid fa-receipt"></i>
@@ -59,6 +294,8 @@
     <footer>
         <a href="#">Mentions légales </a> <span>|</span> <a href="#"> Condition générales d'utilisation et de ventes</a>
     </footer>
+
+    <!-- ===== HOMEPAGE END ===== -->
 </body>
 
 </html>
