@@ -5,7 +5,8 @@
     justify-content: center;
     max-width: 1000px;
     text-align: center;
-    margin: 20px auto;
+    margin: 80px auto;
+    padding-bottom: 600px;
 
     aside {
 
@@ -90,6 +91,7 @@
                 text-align: left;
                 color: #2D4059;
             position: relative;
+            margin-top: 0;
 
                 img {
                     width: 250px;
@@ -108,7 +110,7 @@
                 
             }
             .product:nth-child(1){
-                grid-column: 1/3;
+                grid-column: 1/2;
                 display: flex;
                 align-items: center;
 
