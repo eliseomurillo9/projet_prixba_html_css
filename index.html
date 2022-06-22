@@ -49,34 +49,35 @@
             <div class="bottombar-container">
                 <div class="search">
                     <form method="post" action="traitement.php">
-                        <p>
+                
                             
                             <select name="categories" id="categories">
                                 <option value="Categories">Catégories</option>
 
                             </select>
-                        </p>
-                     </form>
-                    
-                    
-                    <form method="post" action="traitement.php">
-                        <p>
-                            
+                        
+                        </form>                 
+                                                
                             <input type="search" name="searchbar" id="searchbar" placeholder="" size="30" maxlength="30" />
-                            <input type="submit" value="Rechercher" />
-                        </p>
-                    </form>
+                            <input type="submit" value="Rechercher" id="rechercher" />
+                        
+                    
                 </div>
                 <div class="header-navbar">
                     <nav>
                         <a href="catalogue.html">Catalogue</a>
                         <a href="Questions.html">Questions fréquentes</a>
-                        <a href="Connexion.html">Connexion</a>
+                        <a class="connexion" href="Connexion.html">Connexion</a> <i class="fa-solid fa-angle-down"></i> 
+            
                     </nav>
                 </div>
-                <div class="shopping"></div>
+                <div class="shopping">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <span class="icons4">2</span>
+                </div>
             </div>
         </div>
+            
     </header>
     
 </body>
