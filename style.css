@@ -316,6 +316,7 @@ section {
 .product-article {
   padding: 1rem 1rem 0.5rem 1rem;
   margin: 0 1rem;
+  flex-wrap: wrap;
   border-radius: 0.2rem;
   box-shadow: -1px 2px 15px 1px rgba(0, 0, 0, 0.26);
 }
@@ -342,6 +343,15 @@ section {
 }
 .product-article .product-article__details .product-article__details__bottom p {
   color: #4DCF62;
+}
+@media only screen and (max-width: 768px) {
+  .product-article {
+    margin: 0 auto;
+    background-color: #4DCF62;
+  }
+  .product-article .hidden-product {
+    display: none;
+  }
 }
 
 /* === CATEGORIES === */

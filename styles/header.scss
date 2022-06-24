@@ -102,18 +102,18 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         a {
             text-decoration: none;
             color: white;
             font-size: 15px;
             font-weight: 400;
             margin-right: 20px;
-    
+
             .connexion {
                 padding-right: 7px;
                 margin-right: 0px;
-    
+
                 i {
                     color: #FFFFFF;
                     font-weight: none;
@@ -125,7 +125,7 @@ html {
                 margin-left: 50px;
             }
         }
-    
+
         .white-icon {
             font-size: 11px;
             padding: 3px 5px 3px 5px;
@@ -135,13 +135,13 @@ html {
             background-color: #FFFFFF;
             color: #EA5455;
             margin-left: 10px;
-    
+
         }
-    
+
         .shopping {
             display: flex;
             align-items: center;
-    
+
             i {
                 color: #FFFFFF;
                 font-weight: none;
@@ -153,15 +153,14 @@ html {
                 margin: 0 auto;
             }
         }
-    
+
         @media only screen and (max-width: 768px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin: 0 auto;
             justify-content: center;
             align-content: center;
-            // margin-left: 75px;
-    
+
             a {
                 max-width: 100px;
                 padding: .8rem;
@@ -221,5 +220,3 @@ html {
         display: none;
     }
 }
-
-
