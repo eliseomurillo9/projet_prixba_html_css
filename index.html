@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +14,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Prixba</title>
 </head>
+
 <body>
 
     <header>
         <!--header barre du haut-->
         <div class="header-upbar upbar-container">
             <div class="logo_container">
-                <img class="logo" src="images/logos/logo_color.svg" alt="logo Prixba couleur ">
-                <span>PrixBa</span>
+                <a href="./index.html">
+                    <img class="logo" src="images/logos/logo_color.svg" alt="logo Prixba couleur ">
+                </a>
+                    <span>PrixBa</span>
+                
             </div>
 
             <div class="right-zone">
@@ -28,19 +33,19 @@
                 <div class="steps">
                     <div class="step">
                         <p>
-                            <span class="icons1">1</span> Choix et commande des articles 
+                            <span class="icons1">1</span> Choix et commande des articles
                         </p>
                     </div>
-                    <div class="step"> 
-                        <p> 
+                    <div class="step">
+                        <p>
                             <span class="icons2">2</span> Retrait des articles
                         </p>
                     </div>
-                    <div class = "step"> 
-                        <p> 
+                    <div class="step">
+                        <p>
                             <span class="icons3">3</span> Paiement des articles
                         </p>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,26 +55,26 @@
             <div class="bottombar-container">
                 <div class="search">
                     <form method="post" action="traitement.php">
-                
-                            
-                            <select name="categories" id="categories">
-                                <option value="Categories">Catégories</option>
 
-                            </select>
-                        
-                        </form>                 
-                                                
-                            <input type="search" name="searchbar" id="searchbar" placeholder="" size="30" maxlength="30" />
-                            <input type="submit" value="Rechercher" id="rechercher" />
-                        
-                    
+
+                        <select name="categories" id="categories">
+                            <option value="Categories">Catégories</option>
+
+                        </select>
+
+                    </form>
+
+                    <input type="search" name="searchbar" id="searchbar" placeholder="" size="30" maxlength="30" />
+                    <input type="submit" value="Rechercher" id="rechercher" />
+
+
                 </div>
                 <div class="header-navbar">
                     <nav>
                         <a href="./products.html">Catalogue</a>
                         <a href="Questions.html">Questions fréquentes</a>
-                        <a class="connexion" href="Connexion.html">Connexion</a> <i class="fa-solid fa-angle-down"></i> 
-            
+                        <a class="connexion" href="Connexion.html">Connexion</a> <i class="fa-solid fa-angle-down"></i>
+
                     </nav>
                 </div>
                 <div class="shopping">
@@ -78,9 +83,9 @@
                 </div>
             </div>
         </div>
-            
+
     </header>
-    
+
     <!-- ===== HOMEPAGE START ===== -->
     <main class="homepage">
 
@@ -252,8 +257,8 @@
     </main>
     <!-- ===== HOMEPAGE END ===== -->
 
-       <!-- FOOTER START  -->
-       <div class="information">
+    <!-- FOOTER START  -->
+    <div class="information">
         <div class="info_container">
             <i class="fa-solid fa-receipt"></i>
             <section>
@@ -297,6 +302,7 @@
     </footer>
 
     <!-- FOOTER END -->
-    
+
 </body>
+
 </html>
