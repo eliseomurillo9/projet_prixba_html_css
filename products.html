@@ -20,6 +20,72 @@
 </head>
 
 <body>
+    <header>
+        <!--header barre du haut-->
+        <div class="header-upbar upbar-container">
+            <div class="logo_container">
+                <img class="logo" src="images/logos/logo_color.svg" alt="logo Prixba couleur ">
+                <span>PrixBa</span>
+            </div>
+
+            <div class="right-zone">
+                <p>Tous vos besoins à petits prix dans la métropole lilloise</p>
+                <div class="steps">
+                    <div class="step">
+                        <p>
+                            <span class="icons1">1</span> Choix et commande des articles
+                        </p>
+                    </div>
+                    <div class="step">
+                        <p>
+                            <span class="icons2">2</span> Retrait des articles
+                        </p>
+                    </div>
+                    <div class="step">
+                        <p>
+                            <span class="icons3">3</span> Paiement des articles
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header barre du bas-->
+
+        <div class="header-bottombar ">
+            <div class="bottombar-container">
+                <div class="search">
+                    <form method="post" action="traitement.php">
+
+
+                        <select name="categories" id="categories">
+                            <option value="Categories">Catégories</option>
+
+                        </select>
+
+                    </form>
+
+                    <input type="search" name="searchbar" id="searchbar" placeholder="" size="30" maxlength="30" />
+                    <input type="submit" value="Rechercher" id="rechercher" />
+
+
+                </div>
+                <div class="header-navbar">
+                    <nav>
+                        <a href="/products.html">Catalogue</a>
+                        <a href="Questions.html">Questions fréquentes</a>
+                        <a class="connexion" href="Connexion.html">Connexion</a> <i class="fa-solid fa-angle-down"></i>
+
+                    </nav>
+                </div>
+                <div class="shopping">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <span class="icons4">2</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
     <div class="container-products">
         <aside>
             <h2><span class="material-symbols-outlined">
@@ -61,10 +127,10 @@
 
                 </div>
                 <div class="product">
-                    <img src="./images/products/bricolage_marteau.png" alt="Marteau">
-                    <h1>Marteau</h1>
-                    <p>1€</p>
-                    <p>En Stock</p>
+                        <img src="./images/products/bricolage_marteau.png" alt="Marteau">
+                        <h1>Marteau</h1>
+                        <p>1€</p>
+                        <p>En Stock</p>
                 </div>
                 <div class="product">
                     <img src="./images/products/bricolage_marteau.png" alt="Marteau">
@@ -81,7 +147,48 @@
             </div>
         </div>
     </div>
+    <div class="information">
+        <div class="info_container">
+            <i class="fa-solid fa-receipt"></i>
+            <section>
+                <h3>Aticles à petit prix</h3>
+                <p><br> La majorité des produits sont à 1 euro</p>
+            </section>
+            <i class="fa-solid fa-money-bill-1-wave"></i>
+            <section>
+                <h3>Achats sans soucis</h3>
+                <p><br> Chaque commqnde est fournis mains à mains</p>
+            </section>
+            <i class="fa-solid fa-money-check-dollar"></i>
+            <section>
+                <h3>Paiment sécurisé</h3>
+                <p><br> Payez sans vous souciez lors du retrait</p>
+            </section>
+            <i class="fa-solid fa-truck"></i>
+            <section>
+                <h3>Livraison Liloise</h3>
+                <p><br> Ce que vous voulez préparé pour les lillois et les alentours</p>
+            </section>
+        </div>
+    </div>
 
+    <!-- Nav section -->
+    <div class="nav_container">
+        <nav>
+            <a href="#">Accuel</a>
+            <a href="#">Catalogue</a>
+            <a href="#">Questions fréquentes</a>
+        </nav>
+        <nav>
+            <a href="#">Première visite</a>
+            <a href="#">Livraison retrait</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <footer>
+        <a href="#">Mentions légales </a> <span>|</span> <a href="#"> Condition générales d'utilisation et de ventes</a>
+    </footer>
 </body>
 
 </html>

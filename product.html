@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41d6b020fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Produit</title>
+</head>
+
+<body>
+
+    <header>
+        <!--header barre du haut-->
+        <div class="header-upbar upbar-container">
+            <div class="logo_container">
+                <img class="logo" src="images/logos/logo_color.svg" alt="logo Prixba couleur ">
+                <span>PrixBa</span>
+            </div>
+
+            <div class="right-zone">
+                <p>Tous vos besoins à petits prix dans la métropole lilloise</p>
+                <div class="steps">
+                    <div class="step">
+                        <p>
+                            <span class="icons1">1</span> Choix et commande des articles
+                        </p>
+                    </div>
+                    <div class="step">
+                        <p>
+                            <span class="icons2">2</span> Retrait des articles
+                        </p>
+                    </div>
+                    <div class="step">
+                        <p>
+                            <span class="icons3">3</span> Paiement des articles
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header barre du bas-->
+
+        <div class="header-bottombar ">
+            <div class="bottombar-container">
+                <div class="search">
+                    <form method="post" action="traitement.php">
+
+
+                        <select name="categories" id="categories">
+                            <option value="Categories">Catégories</option>
+
+                        </select>
+
+                    </form>
+
+                    <input type="search" name="searchbar" id="searchbar" placeholder="" size="30" maxlength="30" />
+                    <input type="submit" value="Rechercher" id="rechercher" />
+
+
+                </div>
+                <div class="header-navbar">
+                    <nav>
+                        <a href="catalogue.html">Catalogue</a>
+                        <a href="Questions.html">Questions fréquentes</a>
+                        <a class="connexion" href="Connexion.html">Connexion</a> <i class="fa-solid fa-angle-down"></i>
+
+                    </nav>
+                </div>
+                <div class="shopping">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <span class="icons4">2</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- === PRODUCT START === -->
+    <div class="product">
+        <div class="product__container">
+            <div class="main-image">
+                <img src="https://images.unsplash.com/photo-1566937169390-7be4c63b8a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                    alt="hammer">
+            </div>
+            <div class="product__details">
+                <h2>Marteau</h2>
+                <span>1€</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae recusandae veritatis ab quia non
+                    similique natus itaque praesentium omnis. Ipsum!</p>
+                <div class="add-basket__container">
+                    <div class="number-product">
+                        <p>-</p>
+                        <p>2</p>
+                        <p>+</p>
+                    </div>
+                    <button>Ajouter au panier</button>
+                    <div class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="miniatures__container">
+            <img src="https://images.unsplash.com/photo-1566937169390-7be4c63b8a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                alt="hammer">
+            <img src="https://images.unsplash.com/photo-1566937169390-7be4c63b8a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                alt="hammer">
+        </div>
+    </div>
+    <!-- === PRODUCT END === -->
+
+    <!-- FOOTER START  -->
+    <div class="information">
+        <div class="info_container">
+            <i class="fa-solid fa-receipt"></i>
+            <section>
+                <h3>Articles à petit prix</h3>
+                <p><br> La majorité des produits sont à 1 euro</p>
+            </section>
+            <i class="fa-solid fa-money-bill-1-wave"></i>
+            <section>
+                <h3>Achats sans soucis</h3>
+                <p><br> Chaque commande est fournit mains à mains</p>
+            </section>
+            <i class="fa-solid fa-money-check-dollar"></i>
+            <section>
+                <h3>Paiment sécurisé</h3>
+                <p><br> Payez sans vous souciez lors du retrait</p>
+            </section>
+            <i class="fa-solid fa-truck"></i>
+            <section>
+                <h3>Livraison Liloise</h3>
+                <p><br> Ce que vous voulez préparé pour les lillois et les alentours</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Nav section -->
+    <div class="nav_container">
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Catalogue</a>
+            <a href="#">Questions fréquentes</a>
+        </nav>
+        <nav>
+            <a href="#">Première visite</a>
+            <a href="#">Livraison retrait</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <footer>
+        <a href="#">Mentions légales </a> <span>|</span> <a href="#"> Condition générales d'utilisation et de ventes</a>
+    </footer>
+
+    <!-- FOOTER END -->
+</body>
+
+</html>
