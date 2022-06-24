@@ -26,6 +26,10 @@ html {
     span {
         align-self: center;
         color: #2D4059;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
     }
 }
 
@@ -37,13 +41,16 @@ html {
     flex-direction: column;
     justify-content: center;
     align-content: flex-end;
-
 }
 
 .right-zone>p {
     font-weight: 700;
     text-align: right;
     font-size: 22px;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 
 }
 
@@ -54,6 +61,10 @@ html {
     .step p {
         font-size: 14px;
         font-weight: 400;
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: none;
     }
 }
 
@@ -70,10 +81,13 @@ html {
 /* HEADER BOTTOM */
 .header-bottom {
     background-color: #2D4059;
-    margin: auto;
-
+    margin: 0 auto;
+    padding: 1rem;
     font-size: 1rem;
 
+    @media only screen and (max-width: 768px) {
+        padding: 2rem 0;
+    }
 }
 
 .header-bottom__container {
@@ -81,9 +95,79 @@ html {
     margin: 0 auto;
     height: 80px;
     max-width: 1114px;
-    padding: 10px 0 15px 0;
     justify-content: space-between;
     align-items: center;
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 400;
+            margin-right: 20px;
+    
+            .connexion {
+                padding-right: 7px;
+                margin-right: 0px;
+    
+                i {
+                    color: #FFFFFF;
+                    font-weight: none;
+                    margin-left: 0px;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                margin-left: 50px;
+            }
+        }
+    
+        .white-icon {
+            font-size: 11px;
+            padding: 3px 5px 3px 5px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #FFFFFF;
+            color: #EA5455;
+            margin-left: 10px;
+    
+        }
+    
+        .shopping {
+            display: flex;
+            align-items: center;
+    
+            i {
+                color: #FFFFFF;
+                font-weight: none;
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                margin: 0 auto;
+            }
+        }
+    
+        @media only screen and (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            justify-content: center;
+            align-content: center;
+            // margin-left: 75px;
+    
+            a {
+                max-width: 100px;
+                padding: .8rem;
+            }
+        }
+    }
 }
 
 
@@ -97,10 +181,18 @@ html {
     line-height: 18px;
     text-align: center;
     margin-right: 10px;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .search {
     display: flex;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 #searchbar {
@@ -108,6 +200,10 @@ html {
     width: 299px;
     height: 29px;
     border: none;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 #searchbtn {
@@ -120,54 +216,10 @@ html {
     font-weight: 700;
 
     margin-left: 10px;
-}
 
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-        font-weight: 400;
-        margin-right: 20px;
-
-        .connexion {
-            padding-right: 7px;
-            margin-right: 0px;
-
-            i {
-                color: #FFFFFF;
-                font-weight: none;
-                margin-left: 0px;
-            }
-        }
+    @media only screen and (max-width: 768px) {
+        display: none;
     }
 }
 
-.white-icon {
-    font-size: 11px;
-    padding: 3px 5px 3px 5px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    color: #EA5455;
-    margin-left: 10px;
 
-}
-
-.shopping {
-    display: flex;
-    align-items: center;
-
-    i {
-        color: #FFFFFF;
-        font-weight: none;
-        font-size: 25px;
-        margin-left: 20px;
-    }
-}
