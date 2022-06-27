@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -238,11 +239,107 @@ nav .connexion {
   margin-left: 10px;
 }
 
+.lien1, .lien2, .connexion2 {
+  display: none;
+}
+
 .shopping {
   display: flex;
   align-items: center;
 }
 
+/*Responsive header*/
+@media screen and (max-width: 700px) {
+  .header-upbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header-upbar-container {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    padding: 10px;
+  }
+
+  .logo_container span {
+    display: none;
+  }
+
+  .right-zone > p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: unset;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .steps {
+    display: none;
+  }
+
+  .step {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .bottombar-container {
+    height: 180px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 15px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .header-navbar nav {
+    display: none;
+  }
+
+  .header-navbar nav a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .shopping {
+    grid-area: 2/2/2/2;
+  }
+
+  .lien1 {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    grid-area: 1/1/1/1;
+  }
+
+  .lien2 {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    grid-area: 1/2/1/2;
+  }
+
+  .connexion2 {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    grid-area: 2/1/2/1;
+  }
+}
 /* === REUSABLE STYLES === */
 .title {
   margin-bottom: 2rem;
@@ -378,6 +475,82 @@ section {
   font-family: "montserrat", sans-serif;
 }
 
+/*Responsive home*/
+@media screen and (max-width: 700px) {
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categories h2 {
+    font-size: 2rem;
+  }
+  .categories h2 span {
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .best-sales__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .article2, .article3, .article4 {
+    display: none;
+  }
+
+  .multimedia1, .fa-screwdriver-wrench1 {
+    display: none;
+  }
+
+  .catégories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .categories__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .categories__container div {
+    width: 80%;
+    height: max-content;
+    background-color: #2D4059;
+    border-radius: 30px;
+    color: #E5E5E5;
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .categories__container div .fa-solid {
+    font-size: 8rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.7rem;
+  }
+  .categories__container div p {
+    font-size: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .choices {
+    display: none;
+  }
+}
 .container-products {
   background-color: white;
   font-family: "Montserrat", sans-serif;
@@ -668,6 +841,82 @@ footer a {
 footer span {
   color: #f4F4F4;
   margin: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .information {
+    height: unset;
+  }
+
+  .information .info_container {
+    background-color: #2D4059;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .information .info_container i {
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    align-self: unset;
+    font-size: 2rem;
+    color: #EA5455;
+    margin: 1.5rem 1rem;
+    text-align: left;
+  }
+  .information .info_container i:nth-child(1) {
+    padding: 1rem 1.2rem;
+  }
+  .information .info_container section {
+    max-width: unset;
+    margin-bottom: 0;
+  }
+  .information .info_container section h3 {
+    color: #f4F4F4;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .information .info_container section p {
+    color: #F4F4F4;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .nav_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_container nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #2D4059;
+  }
+  .nav_container nav a {
+    padding: 20px 0;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer a {
+    font-size: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

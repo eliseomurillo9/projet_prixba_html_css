@@ -160,3 +160,84 @@ section{
 
     }
 }
+
+/*Responsive home*/
+@media screen and ( max-width : 700px){
+    .homepage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .categories{
+        h2{
+            font-size : 2rem;
+        }
+        
+        h2 span{
+            display : block;
+            color: black;
+            font-weight : 700;
+            font-size: 1rem;
+            padding-top : 1rem;
+            margin-left: .5rem;
+        }
+    }
+
+    .best-sales__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap : 10px;
+    }
+    .article2, .article3, .article4{
+        display: none;
+    }
+    .multimedia1, .fa-screwdriver-wrench1{
+    display : none;
+    }
+    .catégories{
+        display : flex;
+        flex-direction: column;
+    }
+    .categories__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        div{
+            
+            width: 80%;
+            height: max-content;
+    
+            background-color: #2D4059;
+            border-radius: 30px;
+            color: #E5E5E5;
+    
+            margin: .5rem 1rem;
+            padding: 1rem;
+    
+            text-align: center;
+    
+            .fa-solid{
+                font-size: 8rem;
+                text-align: center;
+                padding-top : 4rem;
+                padding-bottom: 1rem;
+                margin-top: .2rem;
+                margin-bottom: .7rem;
+            }
+            p{
+                font-size: 1rem;
+                padding-bottom: 4rem;
+            }
+        }
+    }
+    .choices{
+        display : none;
+    }
+    
+}
